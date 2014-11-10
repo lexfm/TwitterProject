@@ -1,0 +1,169 @@
+/*Nav bar*/
+@font-face {
+	font-family: 'rosettaicons';
+	font-style: normal;
+	font-weight: normal;
+	src: url('Fonts/rosetta-icons-Regular.eot');
+	src: url('Fonts/rosetta-icons-Regular.eot?#iefix') format('eot'),
+	url('Fonts/rosetta-icons-Regular.woff') format('woff'),
+	url('Fonts/rosetta-icons-Regular.ttf') format('truetype');
+}
+body {
+	font-family: Helvetica,Arial,sans-serif;
+
+.topbar {
+	border-bottom: 1px solid #e8e8e8;
+	border-bottom: 1px solid rgba(0,0,0,0.05);
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 1000;
+}
+.global-nav {
+	border-bottom: 1px solid rgba(0,0,0,0.15);
+	height: 46px;
+	background: transparent;
+	position: relative;
+	width: 100%;
+}
+.global-nav-inner {
+	background: #FFF;
+	height: 46px;
+}
+@media screen and (min-width: 1236px){
+	.global-nav .container {
+	max-width: 1190px;
+	margin-left:2%;
+}
+}
+
+.global-nav .container {
+	width: auto;
+	max-width: 890px;
+	text-align: center;
+	margin-left:8%;
+
+}
+.container{position: relative;
+width: 890px;
+margin: 0 auto;}
+
+div{display:block;}
+.global-nav [role=navigation] {
+	display: inline-block;
+}
+.global-nav [role=navigation], .nav, .nav > li {
+	float: left;
+}
+.nav {
+	text-align: left;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+.nav > li {
+	color: #66757f;
+}
+.nav li {
+	position: relative;
+}
+}
+#global-actions > li {
+	height: 46px;
+	overflow: hidden;
+}
+
+#global-actions > li > a {
+	border-bottom: 4px solid #000;
+	-webkit-transition: all .15s ease-in-out;
+	-moz-transition: all .15s ease-in-out;
+	transition: all .15s ease-in-out;
+}
+.nav > li > a {
+	color: inherit;
+	display: block;
+	font-size: 13px;
+	font-weight: 500;
+	height: 46px;
+	padding: 0 14px 0 4px;
+	text-shadow: none;
+	line-height: 1;
+}
+.nav > li .Icon {
+	float: left;
+	margin: 11px 0 0 10px;
+	width: 23px;
+	height: 23px;
+}
+.Icon--large {
+	font-size: 24px;
+	line-height: 1;
+}
+.Icon {
+	background: transparent;
+	font-style: normal;
+	display: inline-block;
+	vertical-align: baseline;
+}
+.Icon:before {
+	font-family: 'rosettaicons';
+	display: block;
+	font-weight: normal;
+	font-style: normal;
+	text-align: center;
+	-webkit-font-smoothing: antialiased;
+}
+.Icon--home:before { content: "\f053"; }
+.Icon--connect:before { content: "\f055"; }
+.Icon--discover:before{ content: "\f052"; }
+.Icon--me:before { content: "\f056"; }
+.nav > li > a .text {
+	float: left;
+	margin-left: 3px;
+	margin-top: 17px;
+	padding: 0;
+}
+.nav > li > a:hover {
+	color: rgb(0,128,255);
+	text-decoration: none;
+}
+#global-actions > li:hover > a, #global-actions > li.active > a {
+	height: 42px;
+}
+#global-actions > li:hover {
+	color: #000;
+}
+
+.visuallyHidden{
+	border:0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+.bird-topbar-etched{
+	color:#55acee;
+	font-size: 21px;
+	margin-top: 14px;
+	margin-left: -24px;
+	display: inline-block;
+	background-position: -40px 0;
+	transition:all .25s ease-in-out;
+}
+.bird-topbar-etched, .bird-topbar-blue, 
+.bird-topbar-white{
+	width: 24px;
+	height: 21px;
+}
+
+.Icon--bird:before{
+	content: "\f179";
+}
+}

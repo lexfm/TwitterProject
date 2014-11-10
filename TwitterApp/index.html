@@ -1,0 +1,211 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Twitter</title>
+	<link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="bootstrap-3.2.0-dist/css/bootstrap.min.css">
+	<link rel="stylesheet/less" type="text/css" href="css/styles.less">
+	<script type="text/javascript" src="Libraries/less.min.js"></script>
+</head>
+<body ng-app="twitterApp" ng-controller="mainController">
+<div id="screenGray"></div>
+<div id="boxGray">
+<div class="tweetHeader"><h4>Publish Tweet</h4></div>
+		<div class="tweetBox">
+		<form class="tweetForm">
+			<input class="tweetContent" type="text">
+				<button class="btn emptyBtn" type="button" tab-index="-1";>
+				<span class="Icon Icon--camera"></span>
+			</button>
+			<button class="btn emptyBtn" type="button" tab-index="-1">
+				<span class="Icon Icon--location"></span>
+			</button>
+			<button class="btn newTweetButton" type="button" tab-index="-1";>
+				<span class="Icon tweetIcon Icon--large"></span>
+				<span class="text">Twittear</span>
+			</button>
+		</form>
+	</div>
+</div>
+<div class="topbar">
+<div class="global-nav">
+<div class="global-nav-inner">
+<div class="contain">
+<h1 class="Icon Icon--bird bird-topbar-etched">
+	<span class="visuallyHidden">Twitter</span>
+</h1>
+<div role="navigation">
+<ul class="nav" id="global-actions">
+<li id="global-nav-home" class="home active">
+							<a href="#">
+								<span class="Icon Icon--home Icon--large"></span>
+								<span class="text">Inicio</span>
+							</a>
+						</li>
+<li class="people">
+							<a href="#">
+								<span class="Icon Icon--connect Icon--large"></span> <span class="text">Notificaciones</span>
+							</a>
+						</li>
+<li class="topics">
+							<a href="#">
+								<span class="Icon Icon--messages Icon--large"></span> <span class="text">Mensajes</span>
+							</a>
+						</li>
+<li class="profile">
+							<a href="#">
+								<span class="Icon Icon--discover Icon--large"></span> <span class="text">Descubre</span>
+							</a>
+						</li>
+</ul></div>
+<div class="rightNavigation">
+	<div role="search">
+		<form class="formSearch" action="/search" id="globalNavSearch">
+			<input class="searchInput" type="text" id="searchString" placeholder="Buscar en Twitter..." autocomplete="off" spellcheck="false">
+			<span class="searchIcon">
+				<button type="button"class="Icon iconSearch navSearch" tabindex="-1"></button> 
+			</span>
+		</form>
+	</div>
+	<ul class="nav rightActions">
+	    <li class="profileSettings">
+	    	<div class="dropdown">
+  <button class="btn dropdown-toggle profileButton" type="button" id="dropdownMenu1" data-toggle="dropdown">
+  <img src="Images/me.jpeg">
+  </button>
+  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span>Perfil</span></a></li>
+    <li role="presentation" class="divider"></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span>Listas</span></a></li>
+    <li role="presentation" class="divider"></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span>Ayuda</span></a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span>Atajos de teclado</span></a></li>
+    <li role="presentation" class="divider"></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span>Configuracion</span></a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span>Cerrar Sesion</span></a></li>
+  </ul>
+</div>
+	    </li>
+		<li class="tweetItem">
+			<button class="newTweetButton btn" id="screenPopper">
+				<span class="Icon tweetIcon Icon--large"></span>
+				<span class="text">Twittear</span>
+			</button>
+		</li>
+	</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="mainContainer">
+	<div class="col-ms-2 below profileCard width">
+	<div id="myProfile">
+	<a class="profileBack" href="#"></a>
+	<div class="profileDashboard">
+		<a href="#" class="profileLinkAvatar">
+			<img class="profilePicture" src="Images/me.jpeg">
+		</a>
+		<div class="profileName"><a href="#">Lex Fimbres</a>
+		<span class="screenName">@LexFimbres</span>
+		</div>
+	</div>
+	<div class="infoContainer">
+		<div class="col-xs-4"><a href="#">
+		<span class="profileTags">Tweets</span><span class="tagValue">858</span></a></div>
+		<div class="col-xs-4"><a href="#">
+		<span class="profileTags">Following</span><span class="tagValue">124</span></a></div>
+		<div class="col-xs-4"><a href="#">
+		<span class="profileTags">Followers</span><span class="tagValue">345</span></a></div>
+	</div>
+	<div class="tweetBox" ng-controller="postController">
+		<form class="tweetForm">
+			<input class="tweetContent" type="text">
+			<div id="hideTweetOptions">
+				<button class="btn emptyBtn" type="button" tab-index="-1";>
+				<span class="Icon Icon--camera"></span>
+			</button>
+			<button class="btn emptyBtn" type="button" tab-index="-1">
+				<span class="Icon Icon--location"></span>
+			</button>
+			<button class="btn newTweetButton" type="button" tab-index="-1";>
+				<span class="Icon tweetIcon Icon--large"></span>
+				<span class="text">Twittear</span>
+			</button>
+			</div>	
+		</form>
+	</div>
+	</div>
+<div id="trendTopics" ng-controller="hashtagController">
+	<div class="myTrendTopics">
+		<span class="sectionHeader">
+			Tendencias: México
+		<span class="midDot">·</span><a class="textSection" href="#" role="button">Cambiar</a>
+		<ul class="trendList">
+			<li class="trendItem" ng-repeat="hashtag in hashtags"><a href="#">{{hashtag}}</a></li>
+		</ul>
+		</span>
+	</div>
+</div>
+</div>
+
+<div class="col-md-6 below tweetsBoard width" ng-controller="tweetsController"><div id="myTweets">
+<ol id="tweetsHolder">
+	<li class="tweetContainer" ng-repeat="tweet in tweets">
+	<tweet-directive></tweet-directive>			
+		</li>
+	</ol>
+</div></div>
+
+<div class="col-md-3 below followThem width" ng-controller="toFollowController"><div id="toFollow">
+		<div class="headerHolder"><span class="sectionHeader">
+			A Quien Seguir:
+		<span class="midDot">·</span><a class="textSection" href="#" role="button">Actualizar</a><span class="midDot">·</span><a class="textSection" href="#" role="button">Ver Todos</a></span></div>
+		
+	</div>
+		<div id="policies">
+			<div class="listHolder">
+				<ul class="policiesList">
+					<li>© 2014 Twitter</li>
+					<li><a href="#">These</a></li>
+					<li><a href="#">Are</a></li>
+					<li><a href="#">The</a></li>
+					<li><a href="#">Links</a></li>
+					<li><a href="#">Supposed</a></li>
+					<li><a href="#">To Be</a></li>
+					<li><a href="#">Policies</a></li>
+					<li>© 2014 Twitter</li>
+					<li><a href="#">These</a></li>
+					<li><a href="#">Are</a></li>
+					<li><a href="#">The</a></li>
+					<li><a href="#">Links</a></li>
+					<li><a href="#">Supposed</a></li>
+					<li><a href="#">To Be</a></li>
+					<li><a href="#">Policies</a></li>
+					<li>© 2014 Twitter</li>
+					<li><a href="#">These</a></li>
+					<li><a href="#">Are</a></li>
+					<li><a href="#">The</a></li>
+					<li><a href="#">Links</a></li>
+					<li><a href="#">Supposed</a></li>
+					<li><a href="#">To Be</a></li>
+					<li><a href="#">Policies</a></li>
+				</ul>
+			</div>
+		</div>
+</div>
+</div>
+<script src="Libraries/dust-full.js"></script>
+<script src="Libraries/jquery1.11.1.min.js"></script>
+<!-- <script src="Libraries/jquery-ui-1.11.1/jquery-ui.min.js"></script> -->
+<script src="bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
+<script src="Libraries/Angular1218/angular.js"></script>
+<script src="Libraries/Angular1218/angular-route.js"></script>
+<script src="twitterApp.js"></script>
+<script src="indexController.js"></script>
+</body>
+</html>

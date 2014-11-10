@@ -1,0 +1,62 @@
+			<div class="tweet">
+		<div class="content">
+			<a href="#" class="accountGroup">
+				<img class="accountAvatar" ng-src="{{tweet.profileInfo.profilePic}}">
+				<span class="profileInfo">
+					<b class="fullName">{{tweet.profileInfo.userName}}</b>
+					<span class="userName"><s>@</s><span>{{tweet.profileInfo.userNick}}</span><span class="midDot">·</span><a class="textSection" href="#" role="button">{{tweet.profileInfo.timeAgo}}</a></span>
+				</span>
+			</a><span class="tweetText">{{tweet.tweetContent}}</span>
+			<div class="imageContainer" ng-show="{{tweet.image}}">
+				<img ng-src="{{tweet.imageSource}}">
+			</div>
+			<div class="collapsible">
+			<div class="statsContainer">
+			<div class="infoContainer">
+				<div class="col-xs-2 retweet">
+			<a href="#">
+		<span class="profileTags">Retweet</span><span class="tagValue">{{tweet.tweetStats.retweet}}</span></a></div>
+				<div class="col-xs-2 favorite">
+			<a href="#">
+		<span class="profileTags">Favorite</span><span class="tagValue">{{tweet.tweetStats.favorite}}</span></a></div><div class="col-xs-7 profilePics">
+			<a class="avatar"  ng-repeat="image in tweet.tweetStats.profilePics" href="#">
+				<img class="img24" ng-src="{{image}}">
+			</a>
+			</div>
+			</div></div>
+			<div class="tweetDetails">
+				<span class="textSection">{{tweet.dateTime.hour}} - {{tweet.dateTime.date}}</span><span class="midDot">·</span><a class="textSection" href="#" role="button">Details</a>
+			</div>
+			</div>
+			<div class="lowerSection">
+			<div class="hideTweet open">
+				<a class="openMsg">Open</a>
+				<a class="closeMsg">Close</a>
+			</div>
+			<div class="tweetActions">
+				<ul class="actionsList">
+					<li class="actionItem">
+						<a href="#" role="button" class="action">
+							<span class="Icon Icon--reply"></span><b>Respond</b>
+						</a>
+					</li>
+					<li class="actionItem">
+						<a href="#" role="button" class="action">
+							<span class="Icon Icon--retweet"></span><b>Retweet</b>
+						</a>
+					</li>
+					<li class="actionItem">
+						<a href="#" role="button" class="action">
+							<span class="Icon Icon--favorite"></span><b>Favorite</b>
+						</a>
+					</li>
+					<li class="actionItem">
+						<a href="#" role="button" class="action">
+							<span class="Icon Icon--more"></span><b>More</b>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div></div>
+		</div>
+		

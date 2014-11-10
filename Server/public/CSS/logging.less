@@ -1,0 +1,63 @@
+@import 'rosettaIcons';
+body{
+	@colorTrend:#009999;
+	@darkGray: #66757f;
+	@lightGray: #8c9ca9;
+	@whiteBorder: #e1e8ed;
+	@lightBorder: 1px solid @whiteBorder;
+	font-family: Helvetica,Arial,sans-serif;
+	background-color:@darkGray;
+	@media screen{
+		@media(max-width:750px){
+			.containerForm{
+	margin: 25% 0 0 5% !important;
+	width: 20em !important;
+		}
+	}
+}
+	.navbar{
+		height: 4em;
+		.Icon {
+	background: transparent;
+	font-style: normal;
+	display: inline-block;
+	vertical-align: baseline;
+}
+.Icon:before {
+	font-family: 'rosettaicons';
+	display: block;
+	font-weight: normal;
+	font-style: normal;
+	text-align: center;
+	-webkit-font-smoothing: antialiased;
+}
+.Icon--bird:before{
+	color:#55acee;
+	font-size: 30px;
+	content: "\f179";
+	z-index: 10;
+	position: absolute;top:0.8em; left: 3em;
+}
+	}
+
+.containerForm{
+	background-color: #fff;
+	width: 25em; height: auto;
+	// position: fixed;
+	// top:50%; left:50%; 
+	position: relative;
+	border-radius: 5px;
+	margin-left: 35%; margin-top: 10%;
+	padding: 1em;
+	.form-signin{
+		.checkbox{
+			margin-left: 1.5em;
+		}
+		.btn{
+			margin-top: 2.5em;
+			margin-bottom: 1em;
+		}
+
+	}
+}
+}

@@ -1,0 +1,30 @@
+{
+	"follow":[
+	{"user":"1",
+	"profilePic":"Images/julissa.jpeg",
+	"userName":"Julissa Montero",
+	"NickName":"jMontero89"
+	},
+	{"user":"2",
+	"profilePic":"Images/adrian.jpg",
+	"userName":"Adrian Morelos",
+	"NickName":"monster951"
+	},
+	{"user":"3",
+	"profilePic":"Images/lucerito.jpeg",
+	"userName":"Lucerito",
+	"NickName":"luceriMiMexico21csaafdfs"
+	},
+	{"user":"4",
+	"profilePic":"Images/harry.jpeg",
+	"userName":"Harry Wells",
+	"NickName":"wellsHarry87"
+	},
+	{"user":"5",
+	"profilePic":"Images/kika.jpeg",
+	"userName":"Kika Edgar",
+	"NickName":"kedgargirlt89"
+}
+]
+
+}

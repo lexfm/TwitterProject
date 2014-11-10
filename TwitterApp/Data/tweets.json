@@ -1,0 +1,62 @@
+{"tweets":[
+	{"tweet":"1",
+	"profileInfo":{"profilePic":"Images/julissa.jpeg","userName":"Julissa Montero", "userNick":"jMontero1989", "timeAgo":"3h"},
+	"tweetContent":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu fermentum metus, id cursus mauris. ",
+	"tweetStats":{"retweet":"5", "favorite":"8", "profilePics":["Images/pic1.jpeg", "Images/pic2.jpeg", "Images/pic3.jpeg", "Images/pic5.jpeg"]},
+	 "dateTime":{"hour":"12:32", "date":"14 de Oct del 2014"},
+	 "image":true,
+	 "imageSource":"Images/image1.jpg"
+	 },
+	 {"tweet":"2",
+	"profileInfo":{"profilePic":"Images/lex.jpeg","userName":"Lex Fimbres", "userNick":"LexFimbres", "timeAgo":"4h"},
+	"tweetContent":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu fermentum metus, id cursus mauris.",
+	"tweetStats":{"retweet":"12", "favorite":"38", "profilePics":["Images/pic3.jpeg", "Images/pic2.jpeg", "Images/pic8.jpeg", "Images/pic6.jpeg"]},
+	 "dateTime":{"hour":"10:15", "date":"14 de Oct del 2014"},
+	 "image":false
+	 },
+	 {"tweet":"3",
+	"profileInfo":{"profilePic":"Images/dulce.jpeg","userName":"Dulce Maria", "userNick":"candyCandy87", "timeAgo":"5h"},
+	"tweetContent":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu fermentum metus, id cursus mauris.",
+	"tweetStats":{"retweet":"115", "favorite":"58", "profilePics":["Images/pic2.jpeg", "Images/pic7.jpeg", "Images/pic3.jpeg", "Images/pic5.jpeg", "Images/pic8.jpeg"]},
+	 "dateTime":{"hour":"20:32", "date":"13 de Oct del 2014"},
+	 "image":false
+	 },
+	  {"tweet":"4",
+	"profileInfo":{"profilePic":"Images/lucerito.jpeg","userName":"Lucerito", "userNick":"luceroMiMexico68", "timeAgo":"5h"},
+	"tweetContent":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu fermentum metus, id cursus mauris.",
+	"tweetStats":{"retweet":"185", "favorite":"258", "profilePics":["Images/pic2.jpeg", "Images/pic7.jpeg", "Images/pic3.jpeg", "Images/pic5.jpeg", "Images/pic8.jpeg", "Images/pic6.jpeg"]},
+	 "dateTime":{"hour":"14:32", "date":"11 de Oct del 2014"},
+	 "image":false
+	 },
+	 {"tweet":"5",
+	"profileInfo":{"profilePic":"Images/harry.jpeg","userName":"Harry Wells", "userNick":"harryW1989", "timeAgo":"2d"},
+	"tweetContent":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu fermentum metus, id cursus mauris.",
+	"tweetStats":{"retweet":"5", "favorite":"8", "profilePics":["Images/pic1.jpeg", "Images/pic2.jpeg", "Images/pic3.jpeg", "Images/pic5.jpeg"]},
+	 "dateTime":{"hour":"12:32", "date":"14 de Oct del 2014"},
+	 "image":true,
+	 "imageSource":"Images/image2.jpg"
+	 },
+	 {"tweet":"2",
+	"profileInfo":{"profilePic":"Images/kika.jpeg","userName":"Lex Fimbres", "userNick":"LexFimbres", "timeAgo":"3d"},
+	"tweetContent":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu fermentum metus, id cursus mauris.",
+	"tweetStats":{"retweet":"12", "favorite":"38", "profilePics":["Images/pic3.jpeg", "Images/pic2.jpeg", "Images/pic8.jpeg", "Images/pic6.jpeg"]},
+	 "dateTime":{"hour":"10:15", "date":"14 de Oct del 2014"},
+	 "image":false
+	 },
+	 {"tweet":"3",
+	"profileInfo":{"profilePic":"Images/adrian.jpg","userName":"Adrian Felix", "userNick":"candyCandy87", "timeAgo":"3d"},
+	"tweetContent":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu fermentum metus, id cursus mauris.",
+	"tweetStats":{"retweet":"115", "favorite":"58", "profilePics":["Images/pic2.jpeg", "Images/pic7.jpeg", "Images/pic3.jpeg", "Images/pic5.jpeg", "Images/pic8.jpeg"]},
+	 "dateTime":{"hour":"20:32", "date":"13 de Oct del 2014"},
+	 "image":false
+	 },
+	  {"tweet":"4",
+	"profileInfo":{"profilePic":"Images/lucerito.jpeg","userName":"Lucerito", "userNick":"luceroMiMexico68", "timeAgo":"4d"},
+	"tweetContent":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu fermentum metus, id cursus mauris.",
+	"tweetStats":{"retweet":"185", "favorite":"258", "profilePics":["Images/pic2.jpeg", "Images/pic7.jpeg", "Images/pic3.jpeg", "Images/pic5.jpeg", "Images/pic8.jpeg", "Images/pic6.jpeg"]},
+	 "dateTime":{"hour":"14:32", "date":"11 de Oct del 2014"},
+	 "image":true,
+	 "imageSource":"Images/image3.jpg"
+	 }
+	]
+}

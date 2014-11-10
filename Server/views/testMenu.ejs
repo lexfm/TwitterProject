@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Twitter</title>
+	<link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="bootstrap-3.2.0-dist/css/bootstrap.min.css">
+	<link rel="stylesheet/less" type="text/css" href="css/stylesTest.less">
+	<script type="text/javascript" src="Libraries/less.min.js"></script>
+</head>
+<body>
+<div class="navbar navbar-default" role="navigation">
+<div class="container-fluid">
+<div class="navbar-header">
+	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	</button>
+	<h1 class="Icon Icon--bird bird-topbar-etched"></h1>
+		<ul class="nav navbar-nav" id="global-actions">
+<li id="global-nav-home" class="home active">
+							<a href="#">
+								<span class="Icon Icon--home Icon--large"></span>
+								<span class="text">Home</span>
+							</a>
+						</li>
+<li class="people">
+							<a href="#">
+								<span class="Icon Icon--connect Icon--large"></span> <span class="text">Notifications</span>
+							</a>
+						</li>
+<li class="topics">
+							<a href="#">
+								<span class="Icon Icon--messages Icon--large"></span> <span class="text">Messages</span>
+							</a>
+						</li>
+<li class="profile">
+							<a href="#">
+								<span class="Icon Icon--discover Icon--large"></span> <span class="text">Discover</span>
+							</a>
+						</li>
+</ul>
+</div>
+<div class="navbar-collapse collapse">
+
+<ul class="nav navbar-nav navbar-right rightNavigation rightActions">
+<li>
+		<form class="formSearch" action="/search" id="globalNavSearch">
+			<input class="searchInput" type="text" id="searchString" placeholder="Search on Twitter..." autocomplete="off" spellcheck="false">
+			<span class="searchIcon">
+				<button type="button"class="Icon iconSearch navSearch" tabindex="-1"></button> 
+			</span>
+		</form>
+</li>
+	    <li class="profileSettings">
+	    	<div class="dropdown">
+  <button class="btn dropdown-toggle profileButton" type="button" id="dropdownMenu1" data-toggle="dropdown">
+  <img src="Images/me.jpeg">
+  </button>
+  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span>Profile</span></a></li>
+    <li role="presentation" class="divider"></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span>Lists</span></a></li>
+    <li role="presentation" class="divider"></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span>Help</span></a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span>Keyboard Shortcuts</span></a></li>
+    <li role="presentation" class="divider"></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span>Settings</span></a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="/logout"><span>Sign Out</span></a></li>
+  </ul>
+</div>
+	    </li>
+		<li class="tweetItem">
+			<button class="newTweetButton btn" id="screenPopper">
+				<span class="Icon tweetIcon Icon--large"></span>
+				<span class="text">Tweet</span>
+			</button>
+		</li>
+	</ul>
+
+</div>
+	
+</div>
+</div>
+	
+<script src="Libraries/jquery1.11.1.min.js"></script>
+<script src="bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
