@@ -1,3 +1,4 @@
+//npm modules
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
@@ -9,8 +10,6 @@ var flash = require('connect-flash');
 var morgan = require('morgan');
 var session = require('express-session');
 var port = process.env.PORT || 3000;
-
-//var configDB = require('./config/database.js');
 
 var app = express();
 var admin=express();
@@ -24,17 +23,8 @@ connection.once('open', function() {
   // Create your schemas and models here.
 });
 
-// admin.addListener('mount', function(parent){
-// 	console.log('App mounted');
-// 	console.log(parent);
-// });
-// admin.get('/', function (req, res) {
-//   res.send('Admin Homepage');
-// });
 
-// app.use('/admin', admin);
-
-mongoose.connect('mongodb://localhost/twitterdb'); // connect to our database
+mongoose.connect('mongodb://localhost/twitterdb'); // connect to database
 
 require('./config/passport')(passport); // pass passport for configuration
 
@@ -57,30 +47,4 @@ require('./routes.js')(app, passport); // load our routes and pass in our app an
 
 // launch ======================================================================
 app.listen(port);
-console.log('The magic happens on port ' + port);
-
-// app.use(bodyParser.json());
-// app.use(bodyParser.urlencoded({ extended: false }));
-// app.use(cookieParser());
-// app.use(express.static(path.join(__dirname, '../TwitterApp')));
-// app.use(favicon(path.join(__dirname,'../TwitterApp','Images','favicon.ico')));
-
-// app.get('/', function(req, res) {
-//   res.sendFile(__dirname, 'index.html');
-// });
-
-// app.get('/logging.html', function(req, res) {
-//   res.sendFile(__dirname, 'logging.html');
-// });
-// // catch 404 and forward to error handler
-// app.use(function(req, res, next) {
-//     var err = new Error('Not Found');
-//     err.status = 404;
-//     next(err);
-// });
-
-// app.set('port', port);
-
-// var server = app.listen(app.get('port'), function() {
-//   console.log('Express server listening on port ' + server.address().port);
-// });
+console.log('All set up on port ' + port);
